@@ -1,0 +1,47 @@
+// Define customerName in the global scope and set it to 'bob'
+var customerName = 'bob';
+
+// Function to return the value of customerName
+function upperCaseCustomerName() {
+    // Modify the value of customerName in the global scope
+    customerName = customerName.toUpperCase();
+    return customerName;
+}
+
+// Define bestCustomer in the global scope
+var bestCustomer;
+
+// Function to set the value of bestCustomer
+function setBestCustomer() {
+    // Modify the value of bestCustomer in the global scope
+    bestCustomer = 'not bob';
+    return bestCustomer;
+}
+
+// Function to overwrite the value of bestCustomer
+function overwriteBestCustomer() {
+    // Modify the value of bestCustomer in the global scope
+    bestCustomer = 'maybe bob';
+    return bestCustomer;
+}
+
+// Define leastFavoriteCustomer in the global scope
+var leastFavoriteCustomer = 'customer';
+
+// Function to attempt to reassign the value of changeleastFavoriteCustomer
+function changeLeastFavoriteCustomer() {
+    // Attempt to modify the value of leastFavoriteCustomer in the global scope
+    leastFavoriteCustomer = 'new customer';
+    return leastFavoriteCustomer;
+}
+
+module.exports = {
+    customerName,
+    upperCaseCustomerName,
+    bestCustomer,
+    setBestCustomer,
+    overwriteBestCustomer,
+    leastFavoriteCustomer,
+    changeLeastFavoriteCustomer
+};
+
